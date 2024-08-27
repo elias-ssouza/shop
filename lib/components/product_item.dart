@@ -18,10 +18,11 @@ class ProductItem extends StatelessWidget {
             textAlign: TextAlign.center),
             backgroundColor: Colors.black87,
             leading: IconButton(onPressed: () {}, 
-            icon: const Icon(
-              Icons.favorite),
+            icon: const Icon(Icons.favorite),
+            color: Theme.of(context).colorScheme.secondary,
             ),
             trailing: IconButton(onPressed: (){}, icon: const Icon(Icons.shopping_cart),
+            color: Theme.of(context).colorScheme.secondary,
             ),
           ),
         child: Image.network(

@@ -14,7 +14,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Minha Loja',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.greenAccent),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.purple, secondary: Colors.deepOrange),
+        fontFamily: 'Lato',
         useMaterial3: true,
       ),
       home: ProductsOverviewPage(),

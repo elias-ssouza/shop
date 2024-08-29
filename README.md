@@ -11,4 +11,7 @@ Busca de Produtos: Encontre rapidamente itens específicos usando a barra de pes
 Detalhes do Produto: Veja informações detalhadas dos produtos, incluindo descrições, tamanhos disponíveis e preços.
 
 Carrinho de Compras: Adicione itens ao carrinho e revise seu pedido antes de finalizar a compra.
+
+![image](https://github.com/user-attachments/assets/17c343e6-b9bd-4c11-a582-8405a7addf75)
+
  

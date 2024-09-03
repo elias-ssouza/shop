@@ -16,8 +16,4 @@ Carrinho de Compras: Adicione itens ao carrinho e revise seu pedido antes de fin
  
 ![image](https://github.com/user-attachments/assets/17c343e6-b9bd-4c11-a582-8405a7addf75)
 
-###### Página do Produto
-
-![image](https://github.com/user-attachments/assets/caebc052-2dfa-4196-ba04-369fff9fac11)
-
  

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shop/models/pages/counter_page.dart';
 import 'package:shop/models/pages/product_detail_page.dart';
 import 'package:shop/models/pages/products_overview_page.dart';
 import 'package:shop/utils/app_routes.dart';
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
       ),
       home: ProductsOverviewPage(),
       routes: {
-        AppRoutes.productDetail: (ctx) => const ProductDetailPage(),
+        AppRoutes.productDetail: (ctx) => const CounterPage(),
       },
       debugShowCheckedModeBanner: false,
     );

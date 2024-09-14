@@ -10,6 +10,14 @@ class CounterPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Exemplo Contador"),
       ),
+      body: Column(
+        children: [
+          IconButton(
+            onPressed: (){}, 
+            icon: const Icon(Icons.add),
+          ),
+        ],
+        ),
     );
   }
 }

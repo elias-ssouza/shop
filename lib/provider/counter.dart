@@ -1,25 +1,29 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
-class CounterState{
+class CounterState {
   int _value = 0;
 
   void inc() => _value++;
   void dec() => _value--;
   int get value => _value;
-  }
 
-class CounterProvider extends InheritedWidget{
+  bool diff(CounterState old) {
+    return old._value != _value;
+  }
+}
+
+class CounterProvider extends InheritedWidget {
   final CounterState state = CounterState();
 
-  CounterProvider({super.key,  required child}) :super(child: child)
+  CounterProvider({Key? key, required Widget child})
+      : super(key: key, child: child);
 
-  static CounterProvider? of(BuildContext context){
+  static CounterProvider? of(BuildContext context) {
     return context.dependOnInheritedWidgetOfExactType<CounterProvider>();
   }
 
   @override
-  bool updateShouldNotify (covariant InheritedWidget oldWidget) {
-    return true;
+  bool updateShouldNotify(covariant CounterProvider oldWidget) {
+    throw oldWidget.state.diff(state);
   }
 }
